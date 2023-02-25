@@ -1,3 +1,5 @@
+// Counter app using react-native-paper and react-native components
+
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
 import { useState } from 'react';
 import { Button } from 'react-native-paper';
