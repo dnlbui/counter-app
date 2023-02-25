@@ -1,5 +1,3 @@
-// be carefule installing react native paper bc using expo... change button and align them...
-
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
 import { useState } from 'react';
 import { Button } from 'react-native-paper';
@@ -9,10 +7,13 @@ export default function App() {
 
   return (
     <>
-      
+      {/* SafeAreaView is a component that wraps the app and makes sure that the content is not covered by the device status bar or notches. */}
       <SafeAreaView style={styles.container}>
+        {/* StatusBar is a component that wraps the app and makes sure that the content is not covered by the device status bar or notches. */}
         <StatusBar barStyle="dark-content" />
+        {/* View is a container that supports layout with flexbox, style, some touch handling, and accessibility controls. */}
         <View style={styles.row}>
+          {/* Text is a React component for displaying text. */}
           <Text style={styles.titleText}>Counter App</Text>
         </View>
 
@@ -21,6 +22,7 @@ export default function App() {
         </View>
         
         <View style={styles.parent}>
+          {/* Button is a component from react-native-paper */}
           <Button
             theme={{ roundness: 3 }}
             mode="outlined"
@@ -30,6 +32,7 @@ export default function App() {
             title='Decrement'
           >Decrement</Button>
           <Button
+            //uncomment to see how theme changes default react-native-paper button theme
             //theme={{ roundness: 3 }}
             style={styles}
             mode="outlined"
@@ -45,7 +48,7 @@ export default function App() {
   );
 }
 
-// react native default flex
+// Stylesheet is a component from react-native. By default uses flexbox layout.
 const styles = StyleSheet.create({
   container: {
     flex: 1,
